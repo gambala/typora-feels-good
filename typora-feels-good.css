@@ -19,6 +19,7 @@
     --bg-color: #4e4e4e;
     --item-hover-bg-color: #2d2d2d;
     --item-hover-text-color: #ffa633;
+    --window-border: 1px solid #4e4e4e;
 }
 
 :root {
@@ -469,4 +470,24 @@ header, .context-menu, .megamenu-content, footer{
 footer {
     color: var(--footer-color);
     background-color: var(--footer-bg-color);
+}
+
+.file-node-icon {
+  margin-right: 8px;
+}
+
+.file-node-collapsed>.file-node-content .fa-caret-right {
+  margin-left: -4px;
+}
+
+.file-node-expanded>.file-node-content .fa-caret-down {
+  margin-left: -6px;
+}
+
+.file-node-icon, .file-node-open-state {
+  color: #777;
+}
+
+.file-tree-node.active .file-node-icon {
+  color: var(--body-primary-color);
 }
